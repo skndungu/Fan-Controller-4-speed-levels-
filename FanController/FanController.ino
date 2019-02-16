@@ -6,6 +6,7 @@ const int enable = 3;        // initialize the PWM i/o pin to control the motor 
 
 const int speedButton = 4; // initialize the push button to control the four speeds
 
+// declaration and initialization of the variables
 int countState = 0;
 int mspeed = 0;
 int motorSpeed = 0;
@@ -15,7 +16,7 @@ float actualVolts = 0.0;
 
 void setup()
 {
-    Serial.begin(9600); // initialize serial for debugging purposes
+    // Serial.begin(9600); // initialize serial for debugging purposes
     // declare the i/o pins as either Inputs or Outputs
     pinMode(motor1, OUTPUT);
     pinMode(motor2, OUTPUT);
